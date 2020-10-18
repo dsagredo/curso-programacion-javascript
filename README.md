@@ -6,9 +6,9 @@
 
 ### Tabla de Contenido
 
+| 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
 | --- | --------------------------------------------------------------- |
-| 1 | [¿Qué es javascript?](#qué-es-javascript) |
-| 2 | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
+| 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
 
 **[⬆ Back to Top](#table-of-contents)**
 
