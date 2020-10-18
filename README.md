@@ -10,6 +10,7 @@
 | --- | --------------------------------------------------------------- |
 | 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
 | 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
+| 3   | [La función Console](#la-funcion-console)                       |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -90,3 +91,37 @@ Se abrirá una ventana como la siguiente:
 ![Mozilla2](https://user-images.githubusercontent.com/24228373/96376638-93d4f980-1156-11eb-9615-0c55e5c94428.png)
 
 Tiene las opciones de guardar en el mismo borrador o en un archivo externo para poder seguir trabajando mas tarde.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### La función Console
+
+Todo el código JS que se implemente en una pagina web esta alojado dentro de un Objeto Global, este se encuentra en los navegadores de forma ordinario, de la misma forma las variables son definidas e insertadas dentro del objeto global.
+Encapsular variables para asignarles nombre correctas. (Attr)
+
+Llamadas a archivos del archivo javaScript
+
+```javascript
+<script src="funciones.js"></script>
+```
+
+En ocasiones se utiliza un alert para saber el valor de alguna variable
+
+```javascript
+alert("Hola mundo");
+```
+
+![alert-hola-mundo](https://user-images.githubusercontent.com/24228373/96388911-93eaee80-1182-11eb-8232-5a9bb794e3ec.jpg)
+
+Pero hacer que el proceso de ejecución se detenga; Otras formas mas eficiente de visualizar dicho valor es utilizando las siguientes opciones:
+
+```javascript
+console.log(variable);
+console.warn(variable); // Warning
+console.error(variable); // Error simple sin dejar de ejecutar el codigo.
+console.info(variable); // Informativo
+```
+
+![Tipos-Console](https://user-images.githubusercontent.com/24228373/96388942-cac10480-1182-11eb-89c3-61c822cc6678.jpg)
+
+Es posible hacer operaciones entre variables utilizando estas funciones console.
