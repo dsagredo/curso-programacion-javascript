@@ -9,6 +9,7 @@
 | Nº  | Contenido                                 |
 | --- | ----------------------------------------- |
 | 1   | [¿Qué es javascript?](#qué-es-javascript) |
+| 2   | [Ventana de diálogo](#ventana-de-dialogo) |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -47,3 +48,16 @@ Express.js,Next,js, Koa.js, etc.
 El lenguaje que colabora mejor con javascript es Python.
 Para crear aplicaciones nativas de escritorio y móviles como mas populares encontramos React Native y Electron.
 El mundo de javascript es de los mas populares y esta creciendo impresionantemente, pero es indispensable conocer desde lo mas simple como tal te presentamos en curso de Javascript, sigue leyendo.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Comprender la ventana de diálogo (console)
+
+En esta lección daremos a conocer la ventana de dialogo o consolé.
+Necesario para comenzar: un navegador actualizado puede ser (Google Chrome, Mozilla Firefox, Safari, etc), en el cual se integran dos herramientas útiles:
+
+**La Consola Web o ventana de Dialogo** : que nos presenta información de la estructura de la web actual identificando cada una de las funciones ejecutadas en tiempo real, ademas esta complementada con algunas lineas de código para ejecutar expresiones Javascript.
+¿Como abrir esta seccion del navegador?
+Por ejemplo en el navegador Mozilla firefox:
+
+Configuraciones/Desarrollador Web/Consola Web.
