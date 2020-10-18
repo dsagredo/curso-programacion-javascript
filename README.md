@@ -64,3 +64,29 @@ Configuraciones/Desarrollador Web/Consola Web.
 
 ![Mozilla1-1](https://user-images.githubusercontent.com/24228373/96376498-97b44c00-1155-11eb-97e3-55e352b6269b.png)
 
+Para Google Chrome : Configuraciones (tres puntos parte superior derecha)/Más herramientas / Herramientas del desarrollador.
+
+En la parte inferior del navegador mostrará:
+
+![Chrome](https://user-images.githubusercontent.com/24228373/96376609-5cfee380-1156-11eb-9e06-49951a51f4d7.png)
+
+Presionando en el teclado F12 y seleccionando la segunda opción “Console”.
+
+Utilizado para ejecutar sencillas lineas de código ya que no se puede guardar.
+
+Esta interfaz se divide en tres secciones que son:
+
+Barra de herramientas: Barra principal definida por secciones que contienen herramientas para visualizar los componentes o ejecutar expresiones en lenguajes como JavaScript o Css. Otras opciones como el “Modo de diseño reactivo”, “Fijar al lateral de la ventana del navegador” o “Mostrar en una ventana separada”.
+Linea de comando: Espacio inferior de la ventana de dialogo que permite al usuario escribir la expresiones JavaScript simples.
+Panel de Mensaje :Ubicada en la parte central, comprende la mayor parte de esta ventana, se muestran errores, resultados de expresiones, alertas o información de la pagina actual.
+\*Borrador: Utilizada para expresiones multilineas, la recomendación es utilizar la opción de “Borrador”, esta modalidad esta diseñada para crear bloques de código que definen una acción.
+
+Ubicada al igual que la consola web:
+
+Configuraciones/Desarrollador Web/Borrador
+
+Se abrirá una ventana como la siguiente:
+
+![Mozilla2](https://user-images.githubusercontent.com/24228373/96376638-93d4f980-1156-11eb-9615-0c55e5c94428.png)
+
+Tiene las opciones de guardar en el mismo borrador o en un archivo externo para poder seguir trabajando mas tarde.
