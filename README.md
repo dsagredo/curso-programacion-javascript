@@ -6,10 +6,10 @@
 
 ### Table of Contents
 
-| Nº  | Contenido                                 |
-| --- | ----------------------------------------- |
-| 1   | [¿Qué es javascript?](#qué-es-javascript) |
-| 2   | [Ventana de diálogo](#ventana-de-dialogo) |
+| Nº  | Contenido                                                       |
+| --- | --------------------------------------------------------------- |
+| 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
+| 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
 
 **[⬆ Back to Top](#table-of-contents)**
 
