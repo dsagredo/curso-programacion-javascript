@@ -61,3 +61,6 @@ Necesario para comenzar: un navegador actualizado puede ser (Google Chrome, Mozi
 Por ejemplo en el navegador Mozilla firefox:
 
 Configuraciones/Desarrollador Web/Consola Web.
+
+![Mozilla1-1](https://user-images.githubusercontent.com/24228373/96376498-97b44c00-1155-11eb-97e3-55e352b6269b.png)
+
