@@ -10,7 +10,7 @@
 | --- | --------------------------------------------------------------- |
 | 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
 | 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
-| 3   | [La función Console](#la-funcion-console)                       |
+| 3   | [La función Console](#la-función-console)                       |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -94,7 +94,7 @@ Tiene las opciones de guardar en el mismo borrador o en un archivo externo para 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### La función Console
+### La función console
 
 Todo el código JS que se implemente en una pagina web esta alojado dentro de un Objeto Global, este se encuentra en los navegadores de forma ordinario, de la misma forma las variables son definidas e insertadas dentro del objeto global.
 Encapsular variables para asignarles nombre correctas. (Attr)
