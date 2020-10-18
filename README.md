@@ -1,4 +1,4 @@
-# Curso de programacion javascript
+# Curso de Programacion Javascript
 
 ### ¿Qué voy a aprender?
 
