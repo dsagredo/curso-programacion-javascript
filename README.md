@@ -190,15 +190,15 @@ Este operador solo regresa true o verdadero cuando las dos variables son true, p
 
 <html>
   <head>
-    <script>
     ```javascript
+    <script>
       var a = false; 
       var b = true; 
       var c = true; 
       alert(a&&b);// resultado false
       alert(b&&c);// resultado true
-      ```
     </script>
+    ```
   </head>
 </html>
 
