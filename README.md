@@ -188,10 +188,9 @@ En Javascript los operadores lógicos son:
 **Operador Lógico AND &&**
 Este operador solo regresa true o verdadero cuando las dos variables son true, para las demás combinaciones se regresa false, ejemplo:
 
-````html
+```html
 <html>
   <head>
-    ```javascript
     <script>
       var a = false;
       var b = true;
@@ -199,20 +198,22 @@ Este operador solo regresa true o verdadero cuando las dos variables son true, p
       alert(a && b); // resultado false
       alert(b && c); // resultado true
     </script>
-    ```
   </head>
 </html>
-````
+```
 
 **Operador Logico OR ||**
 Se determina por un par de pipes, para este operador regresa true cuando uno de las variables es true, ejemplo:
 
-```javascript
+```html
 <html>
   <head>
     <script>
-      var a = false; var b = true; var c = false; alert(a||b);// resultado true
-      alert(b||c);// resultado false
+      var a = false;
+      var b = true;
+      var c = false;
+      alert(a || b); // resultado true
+      alert(b || c); // resultado false
     </script>
   </head>
 </html>
@@ -221,12 +222,14 @@ Se determina por un par de pipes, para este operador regresa true cuando uno de 
 **Operador lógico NOT !**
 Este operador da como resultardo lo contrario a la variable, ejemplo:
 
-```javascript
+```html
 <html>
   <head>
     <script>
-      var a = false; var b = true; alert(!b); // resultado false alert(!a);
-      //resultado true
+      var a = false;
+      var b = true;
+      alert(!b); // resultado false
+      alert(!a); //resultado true
     </script>
   </head>
 </html>
