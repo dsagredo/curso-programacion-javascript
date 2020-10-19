@@ -11,6 +11,7 @@
 | 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
 | 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
 | 3   | [La función Console](#la-función-console)                       |
+| 4   | [Operadores](#Operadores)                                       |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -125,3 +126,50 @@ console.info(variable); // Informativo
 ![Tipos-Console](https://user-images.githubusercontent.com/24228373/96388942-cac10480-1182-11eb-89c3-61c822cc6678.jpg)
 
 Es posible hacer operaciones entre variables utilizando estas funciones console.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores
+
+Los operadores son fundamentales para ver a las variables hacer que funcione el código ya que con ellos podemos comparar, asignar, realizar funciones matemáticas, etc.
+
+Para JavaScript los usados en la sintaxis de son + – \* % = >< en expresiones sencilla o grupos de expresiones como lo son:
+
+```javascript
+var resultado = (8 + 9) / 10 - 3;
+```
+
+El orden en el que se resuelve dichas expresiones es según la jerarquía de operaciones.
+Al hablar de comparadores en Javascript no referimos a >,<, >=, <=, ==, !=
+
+![Operadores](https://user-images.githubusercontent.com/24228373/96389374-900c9b80-1185-11eb-8698-2fc94f5cc934.png)
+
+La manera en la que Javascript interpreta el texto plano:
+Las cadenas de texto se escriben entre comillas dobles.
+Para hacer concatenaciones se escribe un signo de mas en cada una de las uniones:
+
+![1](https://user-images.githubusercontent.com/24228373/96389384-a9154c80-1185-11eb-8946-586dcfb11b20.png)
+
+Los operadores logicos determinan la logica entre 2 valores o expresiones, representados por || para “ó”, && para “y” y ! para “no en una expresion booleana”
+
+![logicos](https://user-images.githubusercontent.com/24228373/96389393-bcc0b300-1185-11eb-8f4f-49c2a8505561.png)
+
+Algunos caracteres necesitan diagonal invertida para reconocerse como funcion en Javascript:
+
+![2](https://user-images.githubusercontent.com/24228373/96389408-d2ce7380-1185-11eb-9948-65be1c91fdcd.png)
+
+```javascript
+\t espacio
+\n para saldo de linea
+\\ para una diagonal (\)
+```
+
+Para comparar texto se utiliza los operadores : == ó !=
+Se debe mencionar que es sencible a mayusculas y minusculas.
+
+![4](https://user-images.githubusercontent.com/24228373/96389436-fee9f480-1185-11eb-936a-80d238eb3027.png)
+
+Para saber la longitud de la(s) palabras utilizamos la propiedad .lenght
+Los espacios en blanco también son contados
+
+![5](https://user-images.githubusercontent.com/24228373/96389457-19bc6900-1186-11eb-866d-5a92d0716c4f.png)
