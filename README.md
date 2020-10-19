@@ -10,9 +10,10 @@
 | --- | --------------------------------------------------------------- |
 | 1   | [¿Qué es javascript?](#qué-es-javascript)                       |
 | 2   | [Ventana de diálogo](#comprender-la-ventana-de-diálogo-console) |
-| 3   | [La función Console](#la-función-console)                       |
+| 3   | [La función console](#la-función-console)                       |
 | 4   | [Operadores](#operadores)                                       |
 | 5   | [Operadores Lógicos](#operadores-lógicos)                       |
+| 6   | [Operadores Aritméticos](#operadores-aritméticos)               |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
