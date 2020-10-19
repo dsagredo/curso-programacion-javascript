@@ -235,3 +235,38 @@ Este operador da como resultardo lo contrario a la variable, ejemplo:
   </head>
 </html>
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores aritméticos
+
+Son aquellos con los que podemos manipular datos numéricos, por ejemplo suma, resta, multiplicación división. Los operadores para cada uno son:
+
+- Suma +
+- Resta –
+- Multiplicación x
+- Potencia
+- División para obtener el cociente /
+- División para obtener el restante %
+- División para obtener la parte entera no es posible en Javascript
+
+Ejemplos:
+
+```html
+<html>
+  <head>
+    <script>
+      var a = 10;
+      var b = 2;
+      var c = 5;
+      alert(a + b + c); // resultado 17
+      alert(a - c); // resultado 5
+      alert(a / c); // resultado 2
+      alert(a * c * b); // resultado 100
+      alert(15 / 2); // resultado 7.5
+      alert(a ** c); // resultado 100
+      alert(a % c); // resultado 0
+    </script>
+  </head>
+</html>
+```
