@@ -173,3 +173,56 @@ Para saber la longitud de la(s) palabras utilizamos la propiedad .lenght
 Los espacios en blanco también son contados
 
 ![5](https://user-images.githubusercontent.com/24228373/96389457-19bc6900-1186-11eb-866d-5a92d0716c4f.png)
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores lógicos
+
+Los operadores lógicos sirven para escribir expresiones que den como resultado un dato booleano, es decir verdadero o falso. Se utilizan especialmente en estructuras condicionales y/o de repeticion.
+En Javascript los operadores lógicos son:
+
+- && corresponde a y (AND)
+- || corresponde a o (OR)
+- ! corresponde a no (NOT)
+
+**Operador Lógico AND &&**
+Este operador solo regresa true o verdadero cuando las dos variables son true, para las demás combinaciones se regresa false, ejemplo:
+
+```javascript
+<html>
+  <head>
+    <script>
+      var a = false; var b = true; var c = true; alert(a&&b);// resultado false
+      alert(b&&c);// resultado true
+    </script>
+  </head>
+</html>
+```
+
+**Operador Logico OR ||**
+Se determina por un par de pipes, para este operador regresa true cuando uno de las variables es true, ejemplo:
+
+```javascript
+<html>
+  <head>
+    <script>
+      var a = false; var b = true; var c = false; alert(a||b);// resultado true
+      alert(b||c);// resultado false
+    </script>
+  </head>
+</html>
+```
+
+**Operador lógico NOT !**
+Este operador da como resultardo lo contrario a la variable, ejemplo:
+
+```javascript
+<html>
+  <head>
+    <script>
+      var a = false; var b = true; alert(!b); // resultado false alert(!a);
+      //resultado true
+    </script>
+  </head>
+</html>
+```
