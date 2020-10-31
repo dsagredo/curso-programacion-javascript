@@ -271,3 +271,46 @@ Ejemplos:
   </head>
 </html>
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores de asignación
+
+Los operadores de asignación
+
+- Operador +=
+- Operador -=
+- Operador \*=
+- Operador /=
+- Operador %=
+- Operador ==
+
+Los operadores de asignación son los mas simples y mas utilizados ya que su función es apuntar un valor a una variable o guardarlo en la misma.
+
+```html
+<html>
+  <head>
+    <script>
+      var a = 10;
+      var b = 2;
+      var c = 5;
+      var d = 3;
+      var e = 100;
+      c += a;
+      alert(c); // resultado 15
+      b -= a;
+      alert(b); // resultado -8
+      a -= b;
+      alert(a); // resultado 18
+      c /= d;
+      alert(c); // resultado 5
+      d *= a;
+      alert(a); // resultado 54
+      e = a;
+      alert(e); // resultado 54
+      e %= c;
+      alert(e); // resultado 4
+    </script>
+  </head>
+</html>
+```
