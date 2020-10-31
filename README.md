@@ -18,6 +18,7 @@
 | 8   | [Operadores de Cadena](#operadores-de-cadena)                   |
 | 9   | [Operadores de Comparación](#operadores-de-comparación)         |
 | 10  | [Variables](#variables)                                         |
+| 11  | [Escritura Dinámica](#escritura-dinámica)                       |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -401,10 +402,10 @@ Los operadores de comparación o relacionales son para relacionar, comprobar o c
 - === Igual valor a tipo
 - != Diferente
 - !== Diferente tipo, diferente valor
-- > Mayor que
-- < Menor que
-- > = Mayor igual que
-- <= Menos igual que
+- '> Mayor que'
+- '< Menor que'
+- '>= Mayor igual que'
+- '<= Menos igual que'
 - ? Ternario
 
 ```html
@@ -619,3 +620,46 @@ DiasSemana
 ```
 
 Cabe mencionar que existen otros tipos llamados especiales que esta construidos por el usuario o que comprenden una función compuesta. En la lección de funciones hablaremos sobre este tema.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Valor y Referencia
+
+Las variables de tipo primitivos siempre se pasan por valor, es decir ambos tienen su propio espacio en memoria.
+Para cada una de las variables declaradas se crea un espacio en memoria y guarda el valor para cada una de ellas, así que si se asigna un valor diferente después de igualar a otra variable conserva el valor que inicialmente se le asigna.
+
+```javascript
+var x = 35;
+var y = x;
+
+console.log(x);
+console.log(y);
+
+x = 55;
+
+console.log(x);
+console.log(y);
+```
+
+Con los objetos siempre se pasan por referencia, es decir se declara un objeto con cada una de sus propiedades y se queda en un espacio de memoria, si se igualan dos objetos, en realidad es el mismo espacio de memoria solo apuntado desde dos objetos, por lo tanto si se asigna un valor distinto a una propiedad del objeto cuando hacemos referencia al mismo tendrá el valor referenciado las veces que se llame.
+
+```javascript
+var a = {
+  nombre: "Karen",
+};
+
+var b = a;
+
+console.log(a);
+console.log(b);
+
+c.nombre = "Eduardo";
+
+console.log(a);
+console.log(b);
+
+c.nombre = "Ana";
+
+console.log(a);
+console.log(b);
+```
