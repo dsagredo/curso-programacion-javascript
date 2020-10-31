@@ -16,6 +16,7 @@
 | 6   | [Operadores Aritméticos](#operadores-aritméticos)               |
 | 7   | [Operadores de Asignación](#operadores-de-asignación)           |
 | 8   | [Operadores de Cadena](#operadores-de-cadena)                   |
+| 9   | [Operadores de Comparación](#operadores-de-comparación)         |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -425,4 +426,79 @@ Los operadores de comparación o relacionales son para relacionar, comprobar o c
     </script>
   </head>
 </html>
+```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Variables
+
+En JavaScript todas las Variables son elementos utilizados para asignar valores o hacer referencia con otros valor. Se definen de la misma forma: con la palabra reservada “var” ya sea para asignar cadenas de texto o números, es igual en cualquier caso.
+
+**Numérico**: utilizado para asignar valores enteros, decimales o flotantes;
+
+```javascript
+var Numero = 1.298;
+var Total = 334.78;
+```
+
+Texto: para almacenar cadenas o palabras, la sintaxis correcta para asignarlo es escribir el texto entre comillas simples o dobles.
+
+```javascript
+var PrimerMes = "Enero";
+var Saludo = "Buenos dias, un gusto verlos";
+var Letra = "r";
+```
+
+Booleanos: almacena solo 2 valores “true” o “false”:}
+
+```javascript
+var Respuesta = false;
+```
+
+Arrays: Son considerados vectores o matrices que almacenan una serie de valores o cadenas de texto y/o numeros:
+
+```javascript
+var nombre_array = [dato1, dato2,dato3......, datoN];
+var Meses = ["Enero","Febrero","Marzo","Abril".........,"Diciembre"];
+```
+
+Para hacer referencia a cada una de las valores del array se utiliza:
+
+```javascript
+var CuartoMes = Meses[3];
+var segundoMes = Meses[1];
+```
+
+El conteo de las posiciones en el array comienza con cero.
+
+DELETE: elimina una propiedad de un objeto:
+
+```javascript
+var DiasSemana = {PrimerDia:"Lunes",SegundoDia:"Martes",TercerDia:"Miercoles"....., SeptimoDia:"Domingo"}
+delete DiasSemana.SegundoDia;
+```
+
+IN: Devuelve un valor booleano para cada caso donde se cumpla o no lo especificado:
+
+```javascript
+var colores = new Array("Rojo", "Azul", "Verde", "Amarillo", "Blanco");
+0 in colores;
+true;
+3 in colores;
+true;
+6 in colores;
+false;
+"Morado" in colores;
+false;
+```
+
+Otras predefinidas son:
+
+```javascript
+"PI" in Math;
+true;
+NaN in Number;
+true;
+length in String;
+false;
 ```
