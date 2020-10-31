@@ -2,7 +2,7 @@
 
 ### ¿Qué voy a aprender?
 
-> Conocerás los fundamentos del lenguaje JavaScript, lo versátil que puede volverse tu web con esta poderosa herramienta y las múltiples utilidades de este lenguaje. Te explicaremos desde los puntos basic: definición de variables y operadores, así como la creación de funciones,la efectividad de los bucles o ciclos para la optimizacion del codigo, etc.Finalmente pondremos a prueba las habilidades aprendidas.
+> Conocerás los fundamentos del lenguaje JavaScript, lo versátil que puede volverse tu web con esta poderosa herramienta y las múltiples utilidades de este lenguaje. Te explicaremos desde los puntos basic: definición de variables y operadores, así como la creación de funciones, la efectividad de los bucles o ciclos para la optimizacion del codigo, etc. Finalmente pondremos a prueba las habilidades aprendidas.
 
 ### Tabla de Contenido
 
@@ -15,6 +15,7 @@
 | 5   | [Operadores Lógicos](#operadores-lógicos)                       |
 | 6   | [Operadores Aritméticos](#operadores-aritméticos)               |
 | 7   | [Operadores de Asignación](#operadores-de-asignación)           |
+| 8   | [Operadores de Cadena](#operadores-de-cadena)                   |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -383,6 +384,44 @@ Veamos un ejemplo donde el operador + funciona no solo para sumar si no también
     <script>
       var Nombre = "Luis Antonio Lara";
       alert(10 + 28 + " " + Nombre);
+    </script>
+  </head>
+</html>
+```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores de comparación
+
+Los operadores de comparación o relacionales son para relacionar, comprobar o cumplir alguna condición. El resultado de estos operadores siempre es una valor booleano
+
+- == Igual a
+- === Igual valor a tipo
+- != Diferente
+- !== Diferente tipo, diferente valor
+- > Mayor que
+- < Menor que
+- > = Mayor igual que
+- <= Menos igual que
+- ? Ternario
+
+```html
+<html>
+  <head>
+    <script>
+      var a, b, c, d, e, f;
+      a = 2;
+      b = 3;
+      c = 5;
+      d = 15;
+      e = "Hola";
+      f = "Adios";
+      alert(a > c); //false
+      alert(b < d); //true
+      alert(d == c); //false
+      alert(b > c); //false
+      alert(e != f); //true
+      alert(a != f ? "Si" : "No"); //Si
     </script>
   </head>
 </html>
