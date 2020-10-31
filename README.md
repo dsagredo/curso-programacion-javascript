@@ -14,6 +14,7 @@
 | 4   | [Operadores](#operadores)                                       |
 | 5   | [Operadores Lógicos](#operadores-lógicos)                       |
 | 6   | [Operadores Aritméticos](#operadores-aritméticos)               |
+| 7   | [Operadores de Asignación](#operadores-de-asignación)           |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -310,6 +311,78 @@ Los operadores de asignación son los mas simples y mas utilizados ya que su fun
       alert(e); // resultado 54
       e %= c;
       alert(e); // resultado 4
+    </script>
+  </head>
+</html>
+```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Operadores de cadena
+
+Los operadores de cadena sirven para concatenar cadenas u objetos.
+Las variables de cadena se pueden asignar comillas simples ' o dobles de forma indistinta.
+
+```html
+<html>
+  <head>
+    <script>
+      var PrimerNombre = "Luis";
+      var segundoNombre = "Antonio";
+      var Apellido = "Lara";
+      var Nombre = PrimerNombre + SegundoNombre + Apellido;
+      alert(Nombre);
+    </script>
+  </head>
+</html>
+```
+
+El resultado es la unión de las tres cadenas pero veamos que no se separa entre cada unas de ellas, para eso necesitamos agregar lo siguiente:
+
+```html
+<html>
+  <head>
+    <script>
+      var PrimerNombre = "Luis";
+      var segundoNombre = "Antonio";
+      var Apellido = "Lara";
+      var Nombre = PrimerNombre + " " + SegundoNombre + " " + Apellido;
+      alert(Nombre);
+    </script>
+  </head>
+</html>
+```
+
+Como sucede con los operadores de asignación podemos utilizar:
+
+```html
+<html>
+  <head>
+    <script>
+      var PrimerNombre = "Luis";
+      var SegundoNombre = "Antonio";
+      var Apellido = "Lara";
+      var Nombre = "";
+      Nombre += PrimerNombre;
+      Nombre += " ";
+      Nombre += SegundoNombre;
+      Nombre += " ";
+      Nombre += Apellido;
+      alert(Nombre); //Luis Antonio Lara
+    </script>
+  </head>
+</html>
+```
+
+Tengamos en cuenta que las variables pueden ser de cualquier tipo ya que en Javascript con especificar var al principio es suficiente.
+Veamos un ejemplo donde el operador + funciona no solo para sumar si no también para concatenar cadenas :
+
+```html
+<html>
+  <head>
+    <script>
+      var Nombre = "Luis Antonio Lara";
+      alert(10 + 28 + " " + Nombre);
     </script>
   </head>
 </html>
