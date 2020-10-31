@@ -19,6 +19,7 @@
 | 9   | [Operadores de Comparación](#operadores-de-comparación)         |
 | 10  | [Variables](#variables)                                         |
 | 11  | [Escritura Dinámica](#escritura-dinámica)                       |
+| 12  | [Valor y Referencia](#valor-y-referencia)                       |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -662,4 +663,71 @@ c.nombre = "Ana";
 
 console.log(a);
 console.log(b);
+```
+
+Con esto podemos diferencia entre asignar por valor o por referencia segun el espacio de memoria asignado o apuntado.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Creacion de Funciones
+
+Las funciones son fragmentos de código que definen una o varias acciones (se hace llamar código modular), que puede usarse tantas veces como sea necesario, usado así para optimizar el código y evitar repetirlo.
+
+La estructura iniciara con la palabra reservada _function_ seguida del _nombre_, entre paréntesis los _paramentos_, o bien sin parámetros, entre llaves el _bloque de instrucciones_ que cumplirá.
+
+Función con parámetros:
+
+```javascript
+function NombreDeLaFuncion (parametros1, paremetro2, ..... parametro n)
+{
+   Bloque;
+   De;
+   Instrucciones;
+}
+```
+
+Para invocar la función, basta con escribir el nombre que se le asigno, recuerda que tiene que ser sintacticamente igual.
+
+```javascript
+NombreDeLaFuncion(a,b,.....n);
+```
+
+Las funciones y procedimientos son iguales, en otros lenguajes de programación se cuenta con un palabra reservada antes del nombre, por ejemplo en otros lenguajes podría llevar, void, public, private, en el caso de Javascript solo existe un tipo de instrucción y es la _function_.
+
+Todas las funciones de Javascript regresan un valor, por ejemplo:
+
+```javascript
+function FuncionDePrueba() {}
+var valor = FuncionDePrueba();
+console.log(valor);
+```
+
+El valor que regresara es :
+
+```javascript
+undefined;
+```
+
+Es importante mencionar que lleve o no parametros siempre para reconocerla como una fucion al ser invocada debe de escribirse un par de parentesis.
+
+Veamos un ejemplo:
+
+```javascript
+function FuncionDePrueba() {
+  console.log("Dentro de la funcion");
+}
+
+var ValorResultante = FuncionDePrueba;
+```
+
+Como ya lo mencionamos todo regresa un valor, incluso puede regresar la definición de una función, en este caso retorna un objeto que es una función.
+
+```javascript
+>FuncionDePrueba
+<-function FuncionDePrueba() {
+  console.log("Dentro de la funcion");
+}
+
+>FuncionDePrueba();
+<-Dentro de la funcion
 ```
