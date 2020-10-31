@@ -17,6 +17,7 @@
 | 7   | [Operadores de Asignación](#operadores-de-asignación)           |
 | 8   | [Operadores de Cadena](#operadores-de-cadena)                   |
 | 9   | [Operadores de Comparación](#operadores-de-comparación)         |
+| 10  | [Variables](#variables)                                         |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -502,3 +503,119 @@ true;
 length in String;
 false;
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Escritura dinámica
+
+Para comprender mejor la escritura dinámica se debe aclarar que existen 2 tipos de datos:
+Primitivos y objetos
+
+**\*Primitivos**: un tipo de datos que apunta a un solo valor, estos a su vez se clasifican en
+5 tipos:
+
+- Strings (Cadenas de texto)
+
+```javascript
+var z = "Hola mundo";
+```
+
+- Booleano (True, False)
+
+```javascript
+var Opcion = false;
+```
+
+- Undefined (Contiene undefined)
+
+```javascript
+var Instruccion;
+Instruccion;
+undefined;
+```
+
+- Null (Contiene null)
+
+```javascript
+var variableNula = null;
+variableNula;
+null;
+```
+
+- Number (Valores numéricos)
+
+```javascript
+var intervalo = 8;
+```
+
+Algo que tenemos en consideración las variables no están asignadas a un tipo de dato especifico podemos asignar un valor numérico en uno que anteriormente tenia asignado un dato booleano.
+
+```javascript
+var a = "Hola mundo";
+a = false;
+a = 1245;
+```
+
+**\*Objeto**: Colección de tipos de datos primitivos u otros objetos.
+Dentro de los objetos esta dentro de algo llamado nomenclatura de pares
+Cada una de las propiedades tiene que tener un par.
+
+Comprende 3 Tipos:
+
+- Tipos predefinidos de JavaScript
+
+Date (Contiene fecha)
+Constructor: new Date(año_num,mes_num,dia_num [,hor_num,min_num,seg_num,mils_num])
+
+```javascript
+var cumpleanos = new Date("April 11, 1990 14:20:00");
+cumpleanos
+Wed Apr 11 1990 14:20:00 GMT-0500 (Hora de verano central (México))
+```
+
+Error (Mensaje de error)
+
+```javascript
+var ErrorLiteral = new Error("Error al ejecutar el código");
+ErrorLiteral
+Error: Error al ejecutar el código
+    at <anonymous>:1:20
+```
+
+- Arrays
+
+```javascript
+Serie de elementos o formación de tipo vector o matriz
+Constructor: new Array(longitudDelArray) new Array(elemento0, elemento1, …, elementoN)
+
+var DiasSemana = ['Lunes', 'Marte', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
+DiasSemana
+(7) ["Lunes", "Marte", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+DiasSemana.length;
+7
+DiasSemana[0]
+"Lunes"
+DiasSemana[4]
+"Viernes"
+DiasSemana.forEach(function (elemento, indice, array) {
+    console.log(elemento, indice);
+});
+VM3284:2 Lunes 0
+VM3284:2 Marte 1
+VM3284:2 Miercoles 2
+VM3284:2 Jueves 3
+VM3284:2 Viernes 4
+VM3284:2 Sabado 5
+VM3284:2 Domingo 6
+undefined
+DiasSemana.push('Lunes2')
+8
+DiasSemana
+(8) ["Lunes", "Marte", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo", "Lunes2"]
+DiasSemana.pop();
+"Lunes2"
+DiasSemana
+(7) ["Lunes", "Marte", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+```
+
+Cabe mencionar que existen otros tipos llamados especiales que esta construidos por el usuario o que comprenden una función compuesta. En la lección de funciones hablaremos sobre este tema.
