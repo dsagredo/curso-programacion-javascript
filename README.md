@@ -1091,3 +1091,52 @@ console.log(arreglo[2] arreglo[4] arreglo[16]);
 Una vez declarado el arreglo , al hacer referencia a el en seguida escribimos un punto lo cual nos mostrara un listado de todas las funciones que son prototipos del mismo.
 
 ![Arreglos2](https://user-images.githubusercontent.com/24228373/97820600-9e7eab00-1c8d-11eb-9104-0ec5c2c4325e.png)
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Funciones de los arreglos
+
+```javascript
+var arreglo = [5, 4, 3, 2, 1];
+console.log(arreglo);
+console.log(arreglo[0], arreglo[4], arreglo[5]);
+```
+
+.reverse: invierte el orden del arreglo
+
+```javascript
+arreglo.reverse();
+console.log(arreglo);
+```
+
+.map(): Nos permite ejecutar una función con cada uno de los componentes del arreglo sin necesidad de recorrer con un bucle. En el siguiente ejemplo no solo ejecutamos map, si no regresamos el valor del elemento ya multiplicado al arreglo.
+
+```javascript
+arreglo = arreglo.map(function (elem) {
+  elem *= elem;
+  return elem;
+});
+
+console.log(arreglo);
+```
+
+.join: convierte todas las posiciones del arreglo en una cadena de texto, al no especificar parámetro para la función. El carácter que se especifique como parámetro para la función sera el que separara a los elemento que componen el arreglo, al no especificar ninguno la función separa los elementos con una coma.
+
+```javascript
+arreglo = arreglo.join(";");
+console.log(arreglo);
+```
+
+.split: Corta el arreglo con el carácter que se especifica como parámetro, al no especificar ninguno solo regresa una cadena.
+
+```javascript
+arreglo = arreglo.split(";");
+console.log(arreglo);
+```
+
+.push: Javascript permite agregar un elemento extra al arreglo son necesidad de definirlo inicialmente como se haría en algún otro lenguaje de programación.
+
+```javascript
+arreglo.push("6");
+console.log(arreglo);
+```
