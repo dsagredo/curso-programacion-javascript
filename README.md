@@ -1222,3 +1222,171 @@ var Fecha = new Date(1455398996795);
 ```
 
 Se especifica la cantidad de milisegundos que se agregaran a la fecha actual.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Eventos
+
+Los eventos son acciones que hace que se dispare una función. Prácticamente el evento puede ser una acción cualquiera por ejemplo el evento clic, focus, etc. a continuación se aliste los eventos para el uso en Javascript:
+
+<table>
+    <thead>
+        <tr role="row">
+            <th rowspan="1" colspan="1">
+                Tipo de evento
+            </th>
+            <th rowspan="1" colspan="1">
+                Nombre con preﬁjo on (eliminar cuando proceda)
+            </th>
+            <th rowspan="1" colspan="1">
+                Descripción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr role="row" class="even">
+            <td rowspan="10">
+                Relacionados con el ratón
+            </td>
+            <td>onclick</td>
+            <td>Click sobre un elemento</td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>ondblclick</td>
+            <td>Doble click sobre un elemento</td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onmouseover</td>
+            <td>
+                Se pulsa un botón del ratón sobre un elemento
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onmouseenter</td>
+            <td>
+                El puntero del ratón entra en el área de un elemento
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onmouseleave</td>
+            <td>
+                El puntero del ratón sale del área de un elemento
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onmousemove</td>
+            <td>
+                El puntero del ratón se está moviendo sobre el área de un elemento
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onmouseover</td>
+            <td>
+                El puntero del ratón se sitúa encima del área de un elemento
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onmouseout</td>
+            <td>
+                El puntero del ratón sale fuera del área del elemento o fuera de uno de sus hijos
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onmouseup</td>
+            <td>
+                Un botón del ratón se libera estando sobre un elemento
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>contextmenu</td>
+            <td>
+                Se pulsa el botón derecho del ratón (antes de que aparezca el menú contextual)
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td rowspan="3">
+                Relacionados con el teclado
+            </td>
+            <td>onkeydown</td>
+            <td>
+                El usuario tiene pulsada una tecla (para elementos de formulario y body)
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onkeypress</td>
+            <td>
+                El usuario pulsa una tecla (momento justo en que la pulsa) (para elementos de formulario y body)
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onkeyup</td>
+            <td>
+                El usuario libera una tecla que tenía pulsada (para elementos de formulario y body)
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td rowspan="6">
+                Relacionados con formularios
+            </td>
+            <td>onfocus</td>
+            <td>
+                Un elemento del formulario toma el foco
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onblur</td>
+            <td>
+                Un elemento del formulario pierde el foco
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onchange</td>
+            <td>
+                Un elemento del formulario cambia
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onselect</td>
+            <td>
+                El usuario selecciona el texto de un elemento input o textarea
+            </td>
+        </tr>
+        <tr role="row" class="odd">
+            <td>onsubmit</td>
+            <td>
+                Se pulsa el botón de envío del formulario (antes del envío)
+            </td>
+        </tr>
+        <tr role="row" class="even">
+            <td>onreset</td>
+            <td>
+                Se pulsa el botón reset del formulario
+            </td>
+        </tr>
+    </tbody>
+</table>
+Hay varias formas para utilizar estos eventos:
+
+Del lado del HTML:
+```html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos en JavaScript</title>
+    </head>
+    <body>
+        <input type="text" onfocus="Evento01()">
+        <button onclick="Evento01()">Aceptar</button>
+        
+    </body>
+</html>
+```
+```html
+<script>
+  function Evento01() {
+    console.log("Accion del evento");
+  }
+</script>
+```
