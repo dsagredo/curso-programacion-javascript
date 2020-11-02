@@ -1140,3 +1140,48 @@ console.log(arreglo);
 arreglo.push("6");
 console.log(arreglo);
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Objetos
+
+Javascript esta diseñado en un paradigma basado en objetos. Un objeto es una colección de propiedades que lo definen como tal.
+
+Los objetos en Javascript se pueden comparar con objetos de la vida real, por ejemplo: una mesa un objeto tangible, tiene propiedades como medidas, color, etc. que la definen. De esta misma forma en Javascript se pueden caracterizar los objetos.
+
+Los objetos tiene propiedades asociadas que son lo mismo que las variables comunes de JavaScript. Las propiedades de un objeto definen las características de un objeto. La sintaxis para identificar cada una de ellas es
+
+**Id_NombreDelObjeto.Propiedad**
+
+Existen 3 formas para definir un objeto:
+
+```html
+<script>
+  var Taza = {Taza.color = "blanca",Taza.peso = "350 gramos",Taza.volumen = "250 cm3"};
+</script>
+```
+
+Es la forma básica pero también la mas sencillas, ya que las propiedades del objeto se definen entre corchetes únicamente separados por comas (,)
+
+```html
+<script>
+  var Taza = new Objeto();
+  Taza.color = "blanca";
+  Taza.peso = "350 gramos";
+  Taza.volumen = "250 cm3";
+</script>
+```
+
+En esta forma utilizamos el operador “new” para crear un instancia de un tipo de objeto a partir de una función
+
+````html
+<script>
+  function Taza(color, peso, volumen) {
+    this.Color = color;
+    this.Peso = peso;
+    this.Volumen = volumen;
+  }
+  var clasificar = new Taza("blanca", "350 gramos", "250 cm3");
+</script>
+``` Para esta forma se crear un objeto haciendo una función.
+````
