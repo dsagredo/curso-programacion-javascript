@@ -20,6 +20,7 @@
 | 10  | [Variables](#variables)                                         |
 | 11  | [Escritura Dinámica](#escritura-dinámica)                       |
 | 12  | [Valor y Referencia](#valor-y-referencia)                       |
+| 13  | [Creacion de funciones](#creacion-de-funciones)                 |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
@@ -731,3 +732,274 @@ Como ya lo mencionamos todo regresa un valor, incluso puede regresar la definici
 >FuncionDePrueba();
 <-Dentro de la funcion
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Estructura de condicionales
+
+Es importante recordar que la ejecución de código en JS es lineal, es decir linea a linea en el orden en el que se lee.
+
+Para controlar este flujo se utilizan:
+
+- Ciclos o bucles,
+- Condicionales,
+- Palabras reservadas para romper el flujo
+- De control de excepciones.
+- En este caso explicaremos las condicionales.
+
+Las condicionales son palabras reservadas que te ayudan a crear un ambiente para que el código tenga un flujo mas especifico y eficiente, la mas básica es el if, la estructura es la siguiente:
+
+```javascript
+if (Condicion) {
+  //Bloque de codigo
+}
+```
+
+Es importante especificar que si para la condición solo se ejecutara una instrucción se pueden omitir las {}, aunque no significa que no se pueda llevar aun si es solo una. Si es un bloque de instrucciones si debe de llevar.
+
+**_If_** en ocasiones esta acompañado con la **_else_**, ejemplo:
+
+```javascript
+if (Condicion) {
+  //Bloque de codigo que cumple la condicion
+} else {
+  //Bloque de codigo que no cumple con la condicion
+}
+```
+
+Pero tengamos en cuenta que **_if_** y **_else_** representan 2 opciones de ejecución, pero que sucede si se requieren mas condiciones. Otras complemento opcional de if es **_else-if_**, ejemplo:
+
+```javascript
+if (Validacion.includes("1 -"))
+  direct = "/system?D=5PCuXo4GT2pkgfji1q1se47SnQu8QxM/JRPN";
+else if (Validacion.includes("2 -"))
+  direct = "/system?D=5PCuXo4Gr8r9T2pkgfji1q7SndjE1RkWiiZv";
+else if (Validacion.includes("3 -"))
+  direct = "/system?D=FVqQLVdRAMf5r72s0kpWzWkSrOJQ==";
+else if (Validacion.includes("4 -"))
+  direct = "/system?D=FVqQLVdRAM3gert58a2fUZNMS1DKA=58=";
+else direct = "/system?D=a";
+```
+
+Explicando el ejemplo anterior, podemos decir que la estructura de if, incialmente es la
+
+```javascript
+if (Condicion)// Si Condicion se cumple
+{
+   //Bloque de código
+}
+else if (Condicion2) //Si Condicion no se cumple, se revisa si Condicion2 se cumple
+{
+   //Bloque de código
+}
+else if (Condicion3) //Si Condicion y Condicion2 no se cumple, se revisa si Condicion3 se cumple
+{
+   //Bloque de código
+}
+.
+.
+.
+.
+else //No se cumple ninguna de las anteriores
+{
+   //Bloque de código
+}
+```
+
+**_Condiciones_**
+
+La sección de la condición es fundamental, para esto hacemos énfasis que se pueden utilizar e interpretar lo que decimos con palabras en una linea de código.
+
+Dato booleano: es decir datos que solo contienen los valores **_true_** o **_false_** para utilizarlo en condicion es:
+
+```javascript
+// Si se comprueba que el usuario se autentico muestra una lista de clientes si no devuelve error
+function Revisar(Autenticacion) {
+  if (Autenticacion) {
+    //true
+    ListadoCliente();
+  } //false
+  else {
+    console.log("No se puede Listar");
+  }
+}
+```
+
+Dato Numérico/Texto:
+
+Igual: == ó .equals()
+Menos que: <
+Menos o igual que: <=
+Mayor que: >
+Mayor o igual que: >=
+Distinto: !=
+
+```javascript
+if (Dia == "Lunes") {//Bloque de codigo}
+  else if (Dia != "Viernes") {//Bloque de codigo}
+  //--------------------------------------
+  if (Conteo < 10) {//Bloque de codigo}
+  esle if (Conteo <= 30) {//Bloque de codigo}
+  else if(Conteo > 100) {//Bloque de codigo}
+  else if(Conteo >= 50) {//Bloque de codigo}
+```
+
+Disyunción ó: ||
+Conjunción y: &&
+
+También se utilizan para agregar varias partes una condición y así ser mas específicos para cada acción de código.
+
+```javascript
+if (Dia == "01" && Mes == "Enero") {
+  console.log("Feliz año nuevo");
+}
+```
+
+```javascript
+if ((Dia == "24" || Dia == "23") && Mes == "Diciembre") {
+  console.log("Se acerca la Navidad");
+}
+```
+
+Las condicionales son una forma de organizar la funcionalidad del código, para que según los casos de uso, pueda funcionar y responder de una manera mas eficiente y ordenada.
+
+Utilizando la lógica y según el tipo de dato con el que interactuemos podamos construir condiciones para cada una de las situaciones.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Estructura de ciclos
+
+Un ciclo es una instrucción muy útil si sabemos como utilizarla y estructurarla, ya que nos permite ejecutar funciones varias veces; Si bien estos ciclos o también llamados bucles son utilizados para determinar de una forma dinámica en lugar de agregar la función n numero de veces.
+
+Comencemos con el ciclo **_For_**, su estructura es
+
+```javascript
+for (
+Se inicializar variable que sera el contador, solo pasa por aqui al iniciar el ciclo var a =0;
+Se determina el numero de veces que se ejecutara el bloque de código a < 10;
+Se ejecutara cada vez  que termine el bloque de código (por lo regular se utiliza para aumentar o disminuir segun lo que se quiera hacer con el contador del cliclo a++)
+)
+{
+   //Bloque de codigo
+}
+```
+
+Ejemplo 1:
+
+```javascript
+for (var a = 0; a < 10; a++) {
+  //Bloque de codigo
+  console.log(a + "Hola mundo");
+}
+```
+
+Ejemplo 2:
+
+```javascript
+var x = 0,
+  Medida;
+var Dias = ["L", "M", "Mi", "J", "V"];
+Medida = Dias.length;
+for (x; x < Medida; x++) {
+  console.log(Dias[x]);
+}
+```
+
+Ciclo **_For/in_**
+
+Este tipo de ciclo es determinado por la cantidad de datos, que contiene un objeto por ejemplo un arreglo, una matriz, etc.
+
+```javascript
+var Equipo = {"Karen", "Eduardo", "Ana", "Maria", "Jorge"};
+var c;
+for (c in Equipo) {
+  console.log(Equipo[c]);
+}
+```
+
+Ciclo **_While_**
+
+Este tipo de Ciclos se ejecutan siempre y cuando una condicion especifica sea verdadero (true)
+
+La estructura es:
+
+```javascript
+while (Condicion) {
+  // Bloque de codigo
+}
+```
+
+Ejemplo:
+
+```javascript
+var i = 0;
+while (i < 20) {
+  console.log(i);
+  i++;
+}
+```
+
+Ciclo **_Do While_**
+
+Variante del ciclo While, este tipo de ciclo primero ejecuta el bloque de código sin importar si la condición es verdadera, en seguida repetirá siempre y cuando la condición se cumpla.
+
+La estructura es:
+
+```javascript
+do {
+  // Bloque de codigo
+} while (condicion);
+```
+
+Ejemplo:
+
+```javascript
+var z = 11;
+do {
+  console.log("Contador en " + z);
+  z++;
+} while (z < 10);
+```
+
+El resultado seria:
+Contador en 11.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Método getElementById
+
+Es un método que permite seleccionar un elemento del documento por medio del valor del atributo id que se le haya asignado.
+La sintaxis es importante ya que si hace distinción, tanto en el atributo id del objeto como en el método.
+La sintaxis es la siguiente:
+
+```javascript
+document.getElementById("id");
+```
+
+Ejemplo:
+
+```javascript
+<html>
+  <head>
+    <title>Método </title>
+  </head>
+  <body>
+    <p id="DivBotones">Seccion Ocultar/Mostrar</p>
+    <button onclick="Accion('Ocultar');">Ocultar</button>
+    <button onclick="Accion('Mostrar');">Mostrar</button>
+  </body>
+</html>
+```
+
+```javascript
+function Accion(Tipo) {
+  var elem = document.getElementById("DivBotones");
+  if (Tipo == "Ocultar") elem.style.display = "none";
+  else elem.style.display = "";
+}
+```
+
+| Elegido por su atributo id          |         Elegido por su atributo name          | Elegido por el tipo de etiqueta HTML (tag) |
+| :---------------------------------- | :-------------------------------------------: | -----------------------------------------: |
+| document.getElementById(‘valorId’); |   document.getElementsByName(‘valorName’);    | document.getElementsByTagName(‘valorTag’); |
+| document.getElementById (menu1);    | document.getElementsBy Name(‘peticionDatos’); |      document.getElementsByTag Name(span); |
