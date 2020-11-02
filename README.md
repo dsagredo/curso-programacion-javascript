@@ -1368,21 +1368,21 @@ Los eventos son acciones que hace que se dispare una función. Prácticamente el
 Hay varias formas para utilizar estos eventos:
 
 Del lado del HTML:
+
 ```html
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="utf-8">
-        <title>Eventos en JavaScript</title>
-    </head>
-    <body>
-        <input type="text" onfocus="Evento01()">
-        <button onclick="Evento01()">Aceptar</button>
-        
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Eventos en JavaScript</title>
+  </head>
+  <body>
+    <input type="text" onfocus="Evento01()" />
+    <button onclick="Evento01()">Aceptar</button>
+  </body>
 </html>
 ```
+
 ```html
 <script>
   function Evento01() {
@@ -1390,3 +1390,43 @@ Del lado del HTML:
   }
 </script>
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### El Objeto THIS
+
+La estructura en los objetos de JavaScript se define con propiedades y métodos (funciones dentro del objeto), recordemos que todo dentro de esta estructura se definen con notación de dos puntos o pares.
+
+En el objeto global **_this_** tiene el valor de la referencia de windows, es decir hace referencia a este objeto directamente.
+Dentro de los objetos se interpreta como el valor del mismo objeto, pero no hay que confundir cuando se escriben varios métodos dentro del mismo, ya que dependiendo de donde se defina el **_this_** es el valor que se tomara, ya sea especificado por un método o del mismo objeto en general
+
+A continuación un ejemplo:
+
+```javascript
+var datosPersona= {
+    nombre: "Laura Teresa",
+    apellidos: "Gonzalez Perez",
+    edad: "22"
+    imprimirDatosPersona: function(){
+        console.log("Nombre completo: "this.nombre + " " + this.apellido + ", Edad:" + this.edad + " años");//------>1 hacer referencia al objeto en general
+    },
+    direccionPersona:{
+        pais: "Mexico",
+        estado: "Veracruz",
+        obtenerResidencia:function(){
+            var self = this;//----------->2
+            var especificarDireccion = function() {
+                console.log(self);
+                console.log("El pais donde radica es: " + self.pais +  " en el estado de : " + self.estado);
+            }
+            especificarDireccion();
+        }
+    }
+};
+persona.imprimirDatosPersona();
+persona.direccionPersona.obtenerResidencia: function();
+```
+
+En la cuarta propiedad del obejto datosPersona, **_this_** esta dentro de la sección del método imprimirDatosPersona lo cual hace referencia al objeto en general, es por eso que especificamos this.nombre y apunta a la primer propiedad del objeto.
+
+En el siguiente escenario se define una variable como función llamada especificarDireccion () y se llama fuera de la misma, debemos notar que para este caso **_this_** tendrá el valor del objeto global (windows) ya que no se define como una propiedad del objeto, por lo cual creamos una variable que apunte al **_this_** que necesitamos seria desde el motodo obteneraResidencia la llamamos **_self_** aunque el nombre podría ser cualquiera, despues de esto podemos llamar self con la referencia al valor correcto.
