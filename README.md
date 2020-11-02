@@ -30,7 +30,7 @@
 | 20  | [Objetos](#objetos)                                             |
 | 21  | [El objeto fecha](#el-objeto-fecha)                             |
 | 22  | [Eventos](#eventos)                                             |
-| 23  | [Elvobjetovthis](#el-objeto-this)                               |
+| 23  | [El objeto this](#el-objeto-this)                               |
 
 **[⬆ Back to Top](#tabla-de-contenido)**
 
