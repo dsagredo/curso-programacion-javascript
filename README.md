@@ -1186,3 +1186,39 @@ En esta forma utilizamos el operador “new” para crear un instancia de un tip
 ```
 
 Para esta forma se crear un objeto haciendo una función.
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### El Objeto Fecha
+
+Este objeto nos permite trabajar con fechas y horas. El constructor de este objeto se identifica por la palabra reservada _Date_.
+
+**new Date();**
+
+Ejemplo:
+
+```javascript
+var FechaActual = new Date();
+```
+
+Es la forma mas compacta y sencilla para saber la fecha y hora actual.
+
+**new Date(Cadena_Fecha);**
+
+Ejemplo:
+
+```javascript
+var FechaEspecifica = new Date(2019, 4, 23, 20, 23, 18, 2);
+```
+
+Como parámetro se especifica el formato, en el orden año, mes, dia, hora, minutos, segundos, milisegundos.
+
+**new Date(Milisegundos);**
+
+Ejemplo:
+
+```javascript
+var Fecha = new Date(1455398996795);
+```
+
+Se especifica la cantidad de milisegundos que se agregaran a la fecha actual.
