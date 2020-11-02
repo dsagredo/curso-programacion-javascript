@@ -1062,3 +1062,32 @@ Ejemplo 2:
   </body>
 </html>
 ```
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### Arreglos
+
+Colección de datos similares. Se reconoce como un arreglo por que se presenta con un par de corchetes [ ].
+
+```javascript
+var arreglo = ["a", "b", "c", "d", "e", "f", "g"];
+console.log(arreglo);
+```
+
+![Arreglos1](https://user-images.githubusercontent.com/24228373/97820509-4cd62080-1c8d-11eb-82a3-e377193374b6.png)
+
+Los elementos de un arreglo comienzan desde el numero cero es decir la primera posición del arreglo es cero y así de forma ascendente para cada uno de los elementos:
+
+```javascript
+console.log(arreglo[3]);
+```
+
+Si se especifica una posición que no existe en el arreglo es decir que esta fuera de los limites del mismo o bien conocido como desbordamiento de arreglo, JavaScript a diferencia de otros lenguajes de programación no regresara un error si no el valor undefined:
+
+```javascript
+console.log(arreglo[2] arreglo[4] arreglo[16]);
+```
+
+Una vez declarado el arreglo , al hacer referencia a el en seguida escribimos un punto lo cual nos mostrara un listado de todas las funciones que son prototipos del mismo.
+
+![Arreglos2](https://user-images.githubusercontent.com/24228373/97820600-9e7eab00-1c8d-11eb-9104-0ec5c2c4325e.png)
