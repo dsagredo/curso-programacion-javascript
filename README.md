@@ -1174,7 +1174,7 @@ Es la forma básica pero también la mas sencillas, ya que las propiedades del o
 
 En esta forma utilizamos el operador “new” para crear un instancia de un tipo de objeto a partir de una función
 
-````html
+```html
 <script>
   function Taza(color, peso, volumen) {
     this.Color = color;
@@ -1183,5 +1183,6 @@ En esta forma utilizamos el operador “new” para crear un instancia de un tip
   }
   var clasificar = new Taza("blanca", "350 gramos", "250 cm3");
 </script>
-``` Para esta forma se crear un objeto haciendo una función.
-````
+```
+
+Para esta forma se crear un objeto haciendo una función.
