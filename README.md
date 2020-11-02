@@ -1003,3 +1003,62 @@ function Accion(Tipo) {
 | :---------------------------------- | :-------------------------------------------: | -----------------------------------------: |
 | document.getElementById(‘valorId’); |   document.getElementsByName(‘valorName’);    | document.getElementsByTagName(‘valorTag’); |
 | document.getElementById (menu1);    | document.getElementsBy Name(‘peticionDatos’); |      document.getElementsByTag Name(span); |
+
+**[⬆ Back to Top](#tabla-de-contenido)**
+
+### InnerHTML
+
+InnerHTML es una propiedad que nos permite leer un dato o asignarlo al contenido de un div o bien, del mismo control. Nos facilita la asignación de valores a controles.
+
+Ejemplo 1:
+
+```html
+<html>
+  <body>
+    <div id="DivContenedor"><p>Texto inicial</p></div>
+    <p>Clic para tomar texto inicial</p>
+    <button onclick="AccionInnerHTML()">Try it</button>
+    <p id="TextoResultante"></p>
+    <script>
+      function AccionInnerHTMLn() {
+        var ConseguirDatoInicial = document.getElementById("DivContenedor")
+          .innerHTML; //Leer valor
+        document.getElementById("TextoResultante").innerHTML =
+          "El texto inicial es: " + ConseguirDatoInicial; //Asignar valor
+      }
+    </script>
+  </body>
+</html>
+```
+
+La sintaxis es:
+
+Leer valor de control:
+
+```javascript
+HTMLElementObject.innerHTML;
+```
+
+Asignar valor a control:
+
+```javascript
+HTMLElementObject.innerHTML = Texto;
+```
+
+En el ejemplo utilizamos la propiedad document.getElementById para tomar la referencia del id del contenedor.
+
+Ejemplo 2:
+
+```html
+<html>
+  <body>
+    <div id="DivContenedor">
+      <h1>Texto inicial</h1>
+    </div>
+    <script>
+      var element = document.getElementById("DivContenedor");
+      element.innerHTML = "Texto final";
+    </script>
+  </body>
+</html>
+```
